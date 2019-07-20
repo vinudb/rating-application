@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Provider } from 'react-redux';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import configureStore from './store/configureStore';
+import { startSetMovies } from './action/movies';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = configureStore();
+const jsx = (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//fetch the initial movies to populate in the list
+store.dispatch(startSetMovies()).then(() => {
+  ReactDOM.render(jsx, document.getElementById('root'));
+});

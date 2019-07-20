@@ -1,0 +1,64 @@
+{
+  "movies": [
+    {
+      "movie": "Logan",
+      "rating": 5,
+      "id": 1
+    },
+    {
+      "movie": "Beauty and the Beast ",
+      "rating": 4,
+      "id": 2
+    },
+    {
+      "movie": "Deadpool",
+      "rating": 5,
+      "id": 3
+    },
+    {
+      "movie": "Man of steel",
+      "rating": 5,
+      "id": 4
+    },
+    {
+      "movie": "Titanic",
+      "rating": 5,
+      "id": 5
+    },
+    {
+      "movie": "Gravity",
+      "rating": 4,
+      "id": 6
+    },
+    {
+      "movie": "The Dark Knight",
+      "rating": 4,
+      "id": 7
+    },
+    {
+      "movie": "The Hangover",
+      "rating": 5,
+      "id": 8
+    },
+    {
+      "movie": "The Avengers",
+      "rating": 1,
+      "id": 9
+    },
+    {
+      "movie": "Inception",
+      "rating": 4,
+      "id": 10
+    },
+    {
+      "movie": "Skyfall",
+      "rating": 5,
+      "id": 11
+    },
+    {
+      "movie": "Ant-Man",
+      "rating": 2,
+      "id": 12
+    }
+  ]
+}

@@ -1,33 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  color: #1900ffbf;
+  margin: 1.2rem 0 0 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.titleMovie{
   color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.content-container {
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  max-width: 80rem; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 45rem) {
+  .content-container{
+    padding: 1.5rem 15rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.button {
+  background: #1900ffbf;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  padding: 0.7rem 5rem;
+  text-decoration: none;
+  border-radius: 2.2rem;
+}
+
+.smallMarginBottom{
+  margin-bottom: 1.2rem;
+}
+
+.listItem{
+  border-radius: 5px;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    background-color: #1900ffbf;
+}
+
+.ratingContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ratingText{
+  font-size: 1.5rem;
+    padding-top: 0.4rem;
+    font-family: fantasy;
+}
+
+.starRating{
+  font-size: 2.0rem
 }
