@@ -18,8 +18,8 @@ class Button extends React.Component {
                         const randNum = Math.floor(Math.random() * this.props.movies.length);
                         const randRating = Math.floor(Math.random() * 5 + 1);
                         this.props.startUpdateRating({ ...this.props.movies[randNum], rating: randRating });
-                    }, Math.floor(Math.random() * 2000 + 1));
-                }, Math.floor(Math.random() * 2000 + 1));
+                    }, Math.floor(Math.random() * 2000 + 1000));
+                }, Math.floor(Math.random() * 2000 + 1000));
             }
             else {
                 clearInterval(this.myInterval);

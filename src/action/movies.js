@@ -13,11 +13,14 @@ export const startSetMovies = () => {
         return fetch(tempUrl)
             .then(resp => resp.json())
             .then(data => {
-                let movies = data.map((movie, index) => {
-                    return (
-                        movie
-                    );
-                })
+                let movies = [];
+                if (data.length > 0) {
+                    movies = data.map((movie, index) => {
+                        return (
+                            movie
+                        );
+                    })
+                }
                 dispatch(setMovies(movies));
             })
     }
